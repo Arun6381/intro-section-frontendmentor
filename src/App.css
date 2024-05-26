@@ -1,0 +1,264 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.nav-bar1 {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-element {
+    display: flex;
+    align-items: center;
+    transition: none;
+}
+
+.nav-ele1 {
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-item img {
+    margin-left: 5px;
+}
+
+.nav-log {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-1,
+.btn-2 {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.btn-2 {
+    border: 1px solid #000;
+}
+
+.slider {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.slider-1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.slider-content span {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.slider-content img {
+    width: 14px;
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-element {
+        display: none;
+        flex-direction: column;
+        width: 60%;
+        height: 80vh;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #f8f9fa;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: 1s ease-in-out;
+    }
+
+    .nav-element.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-ele1 {
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0;
+    }
+
+    .nav-log {
+        position: relative;
+        top: 50%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .nav-log .btn-1,
+    .nav-log .btn-2 {
+        width: 100%;
+
+    }
+
+    .slider,
+    .slider-1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        margin-top: 0;
+    }
+}
+
+.main-sec {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    gap: 50px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+.title p {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.title span {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.description {
+    margin: 20px 0;
+}
+
+.learn-more button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.client-logos {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.client-logos img {
+    width: 50px;
+    height: auto;
+}
+
+.img-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-1 {
+    width: 500px;
+    height: auto;
+}
+
+.img-2 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-sec {
+        padding: 0 20px;
+    }
+
+    .section-content {
+        flex-direction: column;
+    }
+
+    .img-1 {
+        display: none;
+    }
+
+    .img-2 {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+}
